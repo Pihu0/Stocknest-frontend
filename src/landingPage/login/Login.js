@@ -10,7 +10,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://stocktradingwebsitebackend.onrender.com/login', { email, password }, { withCredentials: true });
+      const res = await axios.post( "https://stocknest-backend-309v.onrender.com/login", { email, password }, { withCredentials: true });
       if (res.data.success) {
         localStorage.setItem('token', res.data.token); // if you return token in response
         alert('Login successful');

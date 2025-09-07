@@ -17,7 +17,7 @@ function SignUp() {
     }
     try {
       const res = await axios.post(
-        "https://stocktradingwebsitebackend.onrender.com/signup",
+        "https://stocknest-backend-309v.onrender.com/signup",
         { username, email, password },
         { withCredentials: true }
       );
